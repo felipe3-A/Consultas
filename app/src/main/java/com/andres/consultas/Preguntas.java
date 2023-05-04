@@ -1,3 +1,5 @@
+package com.andres.consultas;
+
 public class Preguntas {
     String id;
     String Pregunta;
@@ -71,15 +73,10 @@ public class Preguntas {
         this.respuesta4 = respuesta4;
     }
 
+
     @Override
     public String toString() {
-        return "Preguntas{" +
-                "id='" + id + '\'' +
-                ", Pregunta='" + Pregunta + '\'' +
-                ", respuesta1='" + respuesta1 + '\'' +
-                ", respuesta2='" + respuesta2 + '\'' +
-                ", respuesta3='" + respuesta3 + '\'' +
-                ", respuesta4='" + respuesta4 + '\'' +
-                '}';
+        return Pregunta+respuesta1+respuesta2+respuesta3+respuesta4;
+
     }
 }
