@@ -76,7 +76,9 @@ public class Preguntas {
 
     @Override
     public String toString() {
-        return Pregunta+respuesta1+respuesta2+respuesta3+respuesta4;
+         return respuesta2;
+
+
 
     }
 }

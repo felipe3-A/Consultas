@@ -34,7 +34,7 @@ ArrayAdapter adapter;
         //Almacena los datos
         ArrayList<Preguntas> almacenapreguntas =new ArrayList<>();
 
-        myref.child("Preguntas").addValueEventListener(new ValueEventListener() {//* Select *from Preguntas
+        myref.child("Preguntas").orderByChild("respuesta2").equalTo("tota").addValueEventListener(new ValueEventListener() {//* Select *from Preguntas
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 //Crear un cico para que recorra cda uno de los datos almacenados
